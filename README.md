@@ -1,14 +1,9 @@
-# html-css-git-code-refactor
+# Project title
 
-**This is the Readme file for this repository**
+Website code refactor (html, css, git)
+This is a small project to refactor a an existing site to make it more accessible.
 
-The link to the deployed site:
-
-[Deployed site](https://devrayhe.github.io/html-css-git-code-refactor/)
-
-The link to the repo url:
-
-[Repo url](https://github.com/DevRayHE/html-css-git-code-refactor.git)
+# Motivation
 
 ## The Task
 
@@ -48,36 +43,27 @@ WHEN I view the title element
 THEN I find a concise, descriptive title
 ```
 
-## Mock-Up
+# Screenshot
 
 The following image shows the web application's appearance and functionality:
 
-![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./Assets/01-html-css-git-homework-demo.png)
+![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](.\assets\images\site-expectation-image.png)
 
-> **Note**: This layout is designed for desktop viewing, so you may notice that some of the elements don't look like the mock-up at a resolution smaller than 768px. Eventually you'll learn how to make elements responsive so that your web application is optimized for any screen size.
-## Notes for each commit
+# Installation
 
-### Saturday 21/08/21 
+The link to the deployed site:
 
-1. Repository created on github
-2. Repository successfully cloned to local machine
-3. Added initial files and folders (index.html and assets\css assets\images)
-4. Tested initial commit - successful
-5. Modified readme.md
-6. Site deploy tested - successful
-### challenges, lesson learnt or follow up
+[Deployed site](https://devrayhe.github.io/html-css-git-code-refactor/)
 
-* Ctrl+Shift+V opens readme.md preview page in VS code.
+The link to the repo url:
 
-* No need to create a new folder with same as repo, and make sure to navigate to parent folder before git clone command, as the command will auto create a new folder with same name as repo.
+[Repo url](https://github.com/DevRayHE/html-css-git-code-refactor.git)
 
-* Git add * vs git add -A, what's the differences?
-
-
-
-### Reference: 
+### License and Reference: 
 
 *From course official Readme:*
 
-*Material within these 4 tabs: The Task, User Story, Acceptance Criteria, Mock up*
+*Material within these 4 sections: The Task, User Story, Acceptance Criteria, Mock up/Screenshot*
+
+*As well as the working image*
 

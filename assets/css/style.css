@@ -9,6 +9,7 @@ body {
 }
 
 /* refactor: used section header seletor instead of class selector */
+/* define styles for header section */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -17,6 +18,7 @@ header {
 }
 
 /* .header removed this line, as its redundant */
+/* customize h1 font style */
 h1 {
     display: inline-block;
     font-size: 48px;
@@ -25,12 +27,13 @@ h1 {
 /* .header 
 h1 removed two selectors as its redundant 
 changed selector to span */ 
+/* define style for span inline text container */
 span {
     color: #d9dcd6;
 }
 
-header
-div {
+/* nested selector defines style for setction tag within header tag */
+header section {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -38,8 +41,7 @@ div {
     font-size: 20px;
 }
 
-header
-div 
+/* removes the dot for ul */
 ul {
     list-style-type: none;
 }
@@ -49,18 +51,16 @@ ul {
 div
 ul
 above selectors are redundant*/
+/* list item displayed inline, with left margin 25px*/
 li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* defines color of the link text and disables decoration of text (link remains same style clicked or not) */
 a {
     color: #ffffff;
     text-decoration: none;
-}
-
-p {
-    font-size: 16px;
 }
 
 /*
@@ -74,7 +74,9 @@ p {
 }*/
 
 /* todo: background-image back to html control? */
-#main-image {
+/* seems it's ok to have background-image in css style, which is even better for performance etc, leave it as it is for now*/
+/* defines styles and location for the main-image within figure tag */
+figure {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -83,109 +85,9 @@ p {
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-/* gave this style a better name */
-.aside {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-
-/*
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}*/
-
-.aside
-div {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/*
-.benefit-lead 
-h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand 
-h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost 
-h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}*/
-
-/* consolidated above 3 selectors to one */
-h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/*
-.benefit-lead 
-img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand 
-img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost 
-img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}*/
-
-/* consolidated above 3 selectors to one, used aside-img for class name of all images inside aside section to define style */
-.aside-img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+/* disable the display of figcaption */
+figcaption {
+    display: none;
 }
 
 /*
@@ -216,10 +118,11 @@ img {
     color: #ffffff;
 }*/
 
-/*  consolidated above 3 selectors to 1 */
-/* todo: should use section instead of div? */
-.content
-div {
+/*  consolidated above 3 selectors to 1 nested selector */
+/* todo: the readme file - Screenshot section - image displayed on local machine
+ but 404 error on github */
+ /* solution: used / instead of \ on readme.md image link */
+ main section article {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -227,17 +130,6 @@ div {
     background-color: #0072bb;
     color: #ffffff;
 }
-
-/*
-h2,
-p {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}*/
 
 
 /*
@@ -257,12 +149,15 @@ img {
 }*/
 
 /* consolidated above 3 selectors to 1 */
-.content
-div
-img {
+/*.content section img {
     max-height: 200px;
 }*/
 
+/* nested selectors, defines style for image within article only
+    set image max height to be 200px */
+main section article img {
+    max-height: 200px;
+}
 
 /*
 .search-engine-optimization 
@@ -281,17 +176,150 @@ h2 {
 h2 {
     margin-bottom: 20px;
     font-size: 36px;
-}
-*/
+}*/
 
-/*todo: this is not fixed yet, font size and margin-bottom different*/
-.content
-div
+/*consolidated above 3 nested selectors to 1 tag selector*/
+/* nested selector header within article style with bottom margin of 20px and font size 36px */
+/*body main section article header {
+    margin-bottom: 20px;
+    font-size: 36px;
+    background-color: #0072bb;
+}*/
+
 h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* sets paragraph font size to be 16px */
+p {
+    font-size: 16px;
+}
+
+/* style float left with right margin of 25 px */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/* style float right with right margin of 25 px */
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* nested selectors section width main to be 75% of screen size
+    items display inline with left margin 20 px*/
+main section {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* gave this style a better name */
+/* style for the aside section (right hand side nav bar) */
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+
+/*
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}*/
+
+/* nested selector, defines style for article within aside */
+aside article {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/*
+.benefit-lead 
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand 
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost 
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}*/
+
+/* consolidated above 3 nested selectors to 1 tag selector */
+/* customize h3 style */
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*
+.benefit-lead 
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-brand 
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost 
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}*/
+
+/* consolidated above 3 nested selectors into 1 class selector, used aside-img for class name of all images inside aside section to define style */
+/* nested selector, defines image style within aside tag only */
+aside article img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*
+h2,
+p {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}*/
+
+/* defines style for footer section */
 footer {
     padding: 30px;
     clear: both;
@@ -299,7 +327,7 @@ footer {
     text-align: center;
 }
 
-footer
-h2 {
+/* nested selector, style for h2 within footer tag only */
+h4 {
     font-size: 20px;
 }

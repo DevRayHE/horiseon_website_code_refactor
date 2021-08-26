@@ -12,24 +12,19 @@
 
 ## A list of what has been done.
 
-```
-Checked all links are functioning correctly
-```
-```
-Increased the efficiency of the CSS by consolidating the selectors and properties, organized to follow the semantic structure of the HTML elements
-```
-```
-Added comments for each elements and section of the page
-```
-```
-Amended codebase to use semantic HTML elements
-```
-```
-Changed heading attributes fall in sequential order
-```
-```
-Amended tile element to be concise and descriptive
-```
+- Checked all links are functioning correctly
+
+- Amended codebase to use semantic HTML elements
+
+- Changed heading attributes fall in sequential order
+
+- Added comments for elements and section of the page
+
+- Amended tile element to be concise and descriptive
+
+- Increased the efficiency of the CSS by consolidating the selectors and properties
+
+- Organized CSS structure to follow the semantic structure of the HTML elements
 
 <br/>
 

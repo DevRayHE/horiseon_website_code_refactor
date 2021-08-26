@@ -9,30 +9,28 @@
     margin: 0;
 }
 
-/* Sets background-color for body section */
 body {
     background-color: #d9dcd6;
 }
 
-/* Gives header section a 20px padding,
-    sets background-color, font color and font family
-*/
+
 header {
     padding: 20px;
+    /* Use font 'Trebuchet MS' first, if this fails, will try the next  font as a "fallback" system, Arial and sans-serif is a generic font family */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Set background color and font color */
     background-color: #2a607c;
     color: #ffffff;
 }
 
-/* Customize h1 font style */
 h1 {
+    /* h1 display as inline-block style */
     display: inline-block;
     font-size: 48px;
 }
 
-
-/* Define font color for span inline text container */
 span {
+    /* color for the font in span inline text container */
     color: #d9dcd6;
 }
 
@@ -43,26 +41,25 @@ header section {
     margin-right: 20px;
     /* Section float to the right hand side of screen */
     float: right;
-    /* Use font 'Gill Sans' first, if this fails, will try the next  font as a "fallback" system, sans-serif is a generic font family */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-/* Removes default bullet points from lists */
+/* No list item marker is shown */
 ul {
     list-style-type: none;
 }
 
-/* List items displayed inline, with left margin 25px*/
+/* List items displayed inline block style, with left margin 25px*/
 li {
     display: inline-block;
     margin-left: 25px;
 }
 
-/* Defines color of the link text and  */
 a {
+    /* Defines color of the hyperlink text */
     color: #ffffff;
-    /* Removes all text styles for hyperlink */
+    /* Removes all the style on the hyperlink text (does not change color, no underline etc)*/
     text-decoration: none;
 }
 
@@ -71,7 +68,6 @@ figure {
     /* Image height 800px, width 100% of screen size */
     height: 800px;
     width: 100%;
-    /* 25px at bottom margin only */
     margin-bottom: 25px;
     /* Url location of the background image */
     background-image: url("../images/digital-marketing-meeting.jpg");
@@ -86,34 +82,28 @@ figcaption {
     display: none;
 }
 
-/* Define styles for article which is child of section which is child of main tag */
+/* Define styles for article with parent of section then main */
  main section article {
-     /* 20px at bottom margin only */
     margin-bottom: 20px;
     /* Padding 50px to all four sides */
     padding: 50px;
-    /* Sets height at 300 px */
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* Background color */
     background-color: #0072bb;
     /* Font color */
     color: #ffffff;
 }
 
-/* Nested selectors, defines style for image within article only
-set image max height to be 200px */
+/* Nested selectors, defines style for image with parent of article then section then main, set image max height to be 200px */
 main section article img {
     max-height: 200px;
 }
 
-/* h2 tag bottom margin only 20px, font size 36px */
 h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-/* Sets paragraph font size to be 16px */
 p {
     font-size: 16px;
 }
@@ -124,51 +114,43 @@ p {
     margin-right: 25px;
 }
 
-/* The element float to the left of its container with left margin of 25px */
+/* The element float to the right of its container with left margin of 25px */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
 /* Nested selectors sets the section within main to be 75% of screen size
-    items display inline with left margin of 20px*/
+    items display inline block with left margin of 20px*/
 main section {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-/* Style for the aside section (right hand side nav bar) */
 aside {
-    /* Set right margin to 20px */
     margin-right: 20px;
     /* Padding on all four sides 20px */
     padding: 20px;
     clear: both;
-    /* Float to the right of its container */
     float: right;
-    /* Element width at 20% of screen size  */
+    /* Element width at 20%, height at 100% of screen size  */
     width: 20%;
-    /* Element height at 100% of screen size  */
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
-/* Nested selector, defines style for article within aside */
 aside article {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-
-/* Customize h3 style */
 h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* Nested selector, defines style for image which has a parent of article and a parent of aside only */
 aside article img {
     /* Block display, element stack on top of each other */
     display: block;
@@ -178,17 +160,14 @@ aside article img {
     max-width: 150px;
 }
 
-/* Defines style for footer section */
 footer {
     /* Padding 30px on all four sides */
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* Align text center horizontally  */
     text-align: center;
 }
 
 h4 {
-    /* Font size 20px for h4 tag */
     font-size: 20px;
 }

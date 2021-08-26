@@ -15,6 +15,7 @@ body {
 
 
 header {
+    /* Padding 20px on all four sides */
     padding: 20px;
     /* Use font 'Trebuchet MS' first, if this fails, will try the next  font as a "fallback" system, Arial and sans-serif is a generic font family */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -82,10 +83,17 @@ figcaption {
     display: none;
 }
 
+/* Nested selectors sets the article within main to be 75% of screen size
+    items display inline block with left margin of 20px*/
+main article {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
 /* Define styles for article with parent of section then main */
- main section article {
+ article > section {
     margin-bottom: 20px;
-    /* Padding 50px to all four sides */
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -94,18 +102,9 @@ figcaption {
     color: #ffffff;
 }
 
-/* Nested selectors, defines style for image with parent of article then section then main, set image max height to be 200px */
-main section article img {
+/* Nested selectors, defines style for image within section and article only, set image max height to be 200px */
+article section img {
     max-height: 200px;
-}
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-p {
-    font-size: 16px;
 }
 
 /* The element float to the left of its container with right margin of 25px */
@@ -120,12 +119,13 @@ p {
     margin-left: 25px;
 }
 
-/* Nested selectors sets the section within main to be 75% of screen size
-    items display inline block with left margin of 20px*/
-main section {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+p {
+    font-size: 16px;
 }
 
 aside {
@@ -141,7 +141,8 @@ aside {
     background-color: #2589bd;
 }
 
-aside article {
+/* define style for section in sidebar only */
+aside > section {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -151,7 +152,8 @@ h3 {
     text-align: center;
 }
 
-aside article img {
+/* define style for image in sidebar section only */
+aside > section img {
     /* Block display, element stack on top of each other */
     display: block;
     /* Top and bottom margin 10px, right and left auto(evenly distribute empty space on both right and left) */

@@ -49,9 +49,5 @@ The link to the repo url:
 
 [Repo url](https://github.com/DevRayHE/html-css-git-code-refactor.git)
 
-<br/>
 
-### License and Reference: 
-
-TBD
 
